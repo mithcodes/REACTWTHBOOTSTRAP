@@ -1,0 +1,12 @@
+.kg-item {
+    background-color: khaki;
+  }
+  .kg-span {
+    font-weight: 500;
+    color: orangered;
+  }
+  
+  .button {
+    float: right;
+  }
+  /* he CSS property float is used to specify whether an element should be floated to the right or left of its container */

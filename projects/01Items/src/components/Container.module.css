@@ -1,0 +1,11 @@
+.container {
+    border: 1px solid black;
+    margin: 15px;
+    width: 50%;
+    border-radius: 5px;
+    min-width: 300px;
+    padding: 15px;
+  }
+
+  /* In CSS, min-width is a property that sets the minimum width of an element. It specifies the smallest width that an element can have, ensuring that it does not become narrower than the specified value. */
+  /* value: The minimum width that you want to set for the element. This can be specified using various units like pixels (px), percentages (%), em units, etc. */

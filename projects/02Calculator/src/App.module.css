@@ -1,0 +1,22 @@
+/* App.module.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black; /* Set the background color for the entire body */
+  }
+  
+  .calculator {
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the container horizontally */
+    height: auto;
+    background-color: #1a1a1a; /* Set a different background color for the calculator container */
+  }
+  
+  /* Add other styles as needed */
+  

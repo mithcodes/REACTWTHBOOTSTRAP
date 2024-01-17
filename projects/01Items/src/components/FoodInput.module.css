@@ -1,0 +1,7 @@
+.foodInput {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+  }
+
+  /* The CSS margin property is used to define the space around an element. In the case of margin: 10px 0px;, it is setting the top and bottom margins to 10px and the left and right margins to 0px. */

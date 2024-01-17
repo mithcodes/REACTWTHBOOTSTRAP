@@ -1,0 +1,12 @@
+input {
+    width: 100%;
+  }
+  
+  .kg-button {
+    min-width: 80px;
+  }
+  
+  .kg-row {
+    margin: 10px 5px;
+    /* This defines a style block for elements with the class .kg-row, setting a margin of 10 pixels at the top and bottom and 5 pixels on the left and right. */
+  }

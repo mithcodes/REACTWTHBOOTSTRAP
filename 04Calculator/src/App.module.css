@@ -1,0 +1,34 @@
+/* .calculator{
+   border:1px solid black;
+   width:200px;
+   border-radius:5px;
+   
+   
+}
+ */
+
+
+.calculator {
+   border: 1px solid black;
+   width: 200px;
+   border-radius: 5px;
+   margin: 0 auto; /* Center the container horizontally */
+   display: flex;
+   flex-direction: column; /* Arrange children in a column */
+   align-items: center; /* Center children horizontally */
+   justify-content: center; /* Center children vertically */
+   height: 400px;
+ }
+ 
+ /* Add styles for the outer container if needed */
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   margin: 0;
+ }
+ 
+
+
+
