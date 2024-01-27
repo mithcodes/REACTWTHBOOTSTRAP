@@ -5,6 +5,7 @@ import ButtonsContainer from './components/ButtonsContainer';
 
 function App() {
   const [calVal,setCalVal] = useState("");
+  // text properties name ha go target sa mila h console sa
  const onButtonClick=(texts)=>{
  if(texts==='C'){
 setCalVal("")

@@ -1,0 +1,55 @@
+import React, { useState } from 'react';
+
+const Counter = () => {
+  // useState returns an array with the current state value and a function to update it
+  const [count, setCount] = useState(0);
+
+  // Event handler to increase the count
+  const increaseCount = () => {
+    setCount(count + 1); // Updating the state
+  };
+
+  // Event handler to decrease the count
+  const decreaseCount = () => {
+    setCount(count - 1); // Updating the state
+  };
+
+  return (
+    <div>
+      <h2>Counter: {count}</h2>
+      <button onClick={increaseCount}>Increase</button>
+      <button onClick={decreaseCount}>Decrease</button>
+    </div>
+  );
+};
+ export default Counter
+
+
+ Import useState:
+
+// Import useState from React: import React, { useState } from 'react';
+// Initialize State:
+
+// Use the useState hook to initialize the state. In this example, the initial state of count is set to 0: const [count, setCount] = useState(0);
+// State Variables:
+
+// count is the state variable that holds the current value of the counter.
+// Update State:
+
+// setCount is a function provided by useState to update the state. When you call setCount(newValue), React will re-render the component with the updated state.
+// Event Handlers:
+
+// increaseCount and decreaseCount are functions that update the count state when the respective buttons are clicked.
+// Rendering State:
+
+// The current state value is rendered in the component: <h2>Counter: {count}</h2>
+// Summary:
+// useState is a hook in React for managing state in functional components.
+// It provides a way to declare state variables and functions to update them.
+// State allows your components to keep track of changing data, triggering re-renders when the state is updated.
+// // Remember, the key idea is that the state represents the current state of your component, and by updating the state, you trigger a re-render of your component with the updated data. This is a fundamental part of building dynamic and interactive React applications.
+
+
+
+
+

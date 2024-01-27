@@ -17,3 +17,5 @@ function AddToDo(){
     )
 }
 export default AddToDo
+
+// This code defines a React functional component called AddToDo. Let's break down its structure and functionality:

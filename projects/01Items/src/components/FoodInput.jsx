@@ -13,6 +13,7 @@ const FoodInput = ({ handleKeyDown }) => {
       placeholder="Enter Food Item here"
       className={styles.foodInput}
       onKeyDown={handleKeyDown}
+      // onChange={(event)=>console.log(event.target.value)}
     />
   );
 };

@@ -26,6 +26,7 @@ console.log("food value is enter"+newFoodItem)
 
 let newItems=[...foodItems,newFoodItem];
 setFoodItems(newItems);
+// ab pages reprint hoga or fooditems k value ab change h gaya ga
     } 
   
   }
@@ -45,3 +46,5 @@ setFoodItems(newItems);
   );
 }
 export default App;
+
+

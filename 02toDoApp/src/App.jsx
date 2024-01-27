@@ -65,3 +65,8 @@ export default App
 
 
 {/* //center tage content ko center mai le atta han */}
+
+
+// useState is a React hook used for creating state variables in functional components.
+// AppName, AddToDo, ToDoItem, and ToDoItem2 are components imported from separate files.
+// The useState hook is used to create a state variable count initialized with a value of 0.

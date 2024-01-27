@@ -1,0 +1,126 @@
+Passing functions via props is a common pattern in React, especially when you want to allow child components to communicate with their parent or when you want to share functionality between components. Let's go through an example to illustrate this concept.
+Suppose we have a parent component called Parent and a child component called Child. We want to pass a function from Parent to Child so that when a button is clicked in Child, it triggers a function in Parent.
+
+
+Parent Component (Parent.js):
+jsx
+Copy code
+import React from 'react';
+import Child from './Child';
+
+const Parent = () => {
+  // Function to be passed to Child
+  const handleButtonClick = () => {
+    alert('Button in Child clicked!');
+  };
+
+  return (
+    <div>
+      <h2>Parent Component</h2>
+      {/* Pass the function as a prop to Child */}
+      <Child onButtonClick={handleButtonClick} />
+    </div>
+  );
+};
+
+export default Parent;
+In this example, Parent has a function called handleButtonClick. We want to pass this function to Child so that it can be triggered when a button is clicked in Child.
+
+
+
+Child Component (Child.js):
+jsx
+Copy code
+import React from 'react';
+
+const Child = ({ onButtonClick }) => {
+  return (
+    <div>
+      <h3>Child Component</h3>
+      {/* Button that triggers the function from props */}
+      <button onClick={onButtonClick}>Click Me</button>
+    </div>
+  );
+};
+
+export default Child;
+In Child, we receive the onButtonClick function as a prop. We then use it as an event handler for a button click. When the button is clicked, the function passed from Parent will be executed.
+
+
+
+App Component (App.js):
+jsx
+Copy code
+import React from 'react';
+import Parent from './Parent';
+
+const App = () => {
+  return (
+    <div>
+      <h1>React Function Props Example</h1>
+      {/* Render the Parent component */}
+      <Parent />
+    </div>
+  );
+};
+
+export default App;
+In the App component, we simply render the Parent component.
+
+Explanation:
+Parent Component:
+
+Defines a function (handleButtonClick) that we want to pass to the child.
+Renders the Child component and passes the function as a prop (onButtonClick).
+Child Component:
+
+Receives the function (onButtonClick) as a prop.
+Uses the function as an event handler for a button click.
+App Component:
+
+Renders the Parent component.
+Now, when you run the app and click the "Click Me" button in the Child component, it triggers the handleButtonClick function in the Parent component. This demonstrates the concept of passing functions via props in React, enabling communication between parent and child components.
+
+
+
+
+App Component (App.js):
+jsx
+Copy code
+import React from 'react';
+import Parent from './Parent';
+
+const App = () => {
+  return (
+    <div>
+      <h1>React Function Props Example</h1>
+      {/* Render the Parent component */}
+      <Parent />
+    </div>
+  );
+};
+
+export default App;
+In the App component, we simply render the Parent component.
+
+Explanation:
+Parent Component:
+
+Defines a function (handleButtonClick) that we want to pass to the child.
+Renders the Child component and passes the function as a prop (onButtonClick).
+Child Component:
+
+Receives the function (onButtonClick) as a prop.
+Uses the function as an event handler for a button click.
+App Component:
+Renders the Parent component.
+Now, when you run the app and click the "Click Me" button in the Child component, it triggers the handleButtonClick function in the Parent component. This demonstrates the concept of passing functions via props in React, enabling communication between parent and child components.
+
+
+
+
+
+
+
+
+
