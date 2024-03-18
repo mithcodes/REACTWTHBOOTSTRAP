@@ -17,7 +17,7 @@ function App() {
   };
 
 
-  const handleDeleteItem = (todoItemName) => {
+  const onDeleteItem = (todoItemName) => {
     const newTodoItems = todoItems.filter((item) => item.name !== todoItemName);
     setTodoItems(newTodoItems);
   };
