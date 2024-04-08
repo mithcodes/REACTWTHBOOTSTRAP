@@ -31,7 +31,7 @@ function App() {
 
     return (
         <center className='main-container'>
-            <h1 className="heading font-weight-bold">Order your candy</h1>
+            <h1 className="heading font-weight-bold">Order your candy please order </h1>
             <div className="cart-container" onClick={handleCartClick}>
                 <FaShoppingCart size="40px" />
                 <span className="cart-count">{cartCount}</span>
