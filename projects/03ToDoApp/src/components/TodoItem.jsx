@@ -7,6 +7,7 @@ const TodoItem=({todoName,todoDate,onDelete})=>{
           <div className="col-6">{todoName}</div>
           <div className="col-4">{todoDate}</div>
           <div className="col-2">
+            {/* <button type="button" class="btn btn-danger kg-button" onClick={()=>onDelete(todoName)}> */}
             <button type="button" class="btn btn-danger kg-button" onClick={()=>onDelete(todoName)}>
             <MdDelete />
             </button>

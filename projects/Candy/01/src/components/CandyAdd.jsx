@@ -25,29 +25,45 @@ const CandyAdd = ({ onNewCandy, updateCart }) => {
     };
 
     return (
-        <div className="row m-3">
-            <div className="col">
-                <input type="text" placeholder="Candy name"
-                    value={candyName}
-                    onChange={handleName}
-                />
-            </div>
-            <div className="col">
-                <input type="number" placeholder="Enter Price"
-                    value={candyPrice}
-                    onChange={handlePrice}
-                />
-            </div>
-            <div className="col">
-                <textarea type="text" rows="1" cols="20" placeholder="Enter candy details"
-                    value={candyDetail}
-                    onChange={handleDetail}
-                ></textarea>
-            </div>
-            <div className="col">
-                <button type="button" className="btn btn-success" onClick={handleAddButtonClicked}>
-                    Add Product
-                </button>
+        <div className="container">
+            <div className="row m-3">
+                <div className="col-12 col-md-4 mb-3">
+                    <input 
+                        type="text" 
+                        className="form-control" 
+                        placeholder="Candy name"
+                        value={candyName}
+                        onChange={handleName}
+                    />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                    <input 
+                        type="number" 
+                        className="form-control" 
+                        placeholder="Enter Price"
+                        value={candyPrice}
+                        onChange={handlePrice}
+                    />
+                </div>
+                <div className="col-6 col-md-4 mb-3">
+                    <textarea 
+                        type="text" 
+                        className="form-control" 
+                        rows="1" 
+                        placeholder="Enter candy details"
+                        value={candyDetail}
+                        onChange={handleDetail}
+                    ></textarea>
+                </div>
+                <div className="col-12 col-md-1 mb-3">
+                    <button 
+                        type="button" 
+                        className="btn btn-success btn-block" 
+                        onClick={handleAddButtonClicked}
+                    >
+                        Add Product
+                    </button>
+                </div>
             </div>
         </div>
     );

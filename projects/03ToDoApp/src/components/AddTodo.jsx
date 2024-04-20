@@ -6,7 +6,7 @@ import { MdOutlineLibraryAdd } from "react-icons/md";
 function AddTodo({onNewItem}) {
   //  const [todoName,setTodoName]=useState("");
   // const [dueDate,setDueDate]=useState("")
-// useref sabanuht sara code nai likhna padega orhr input ka baad page render nai karega 
+// useref sa bahut sara code nai likhna padega orhr input ka baad page render nai karega 
  const todoNameElement=useRef()
  const dueDateElement=useRef()
 //   const handleNameChange=(event)=>{
@@ -25,6 +25,7 @@ const handleAddButtonClicked=()=>{
   onNewItem(todoName,dueDate)
   todoNameElement.current.value=""
   dueDateElement.current.value=""
+  // onNewItem(todoName,dueDate)
   // setDueDate("")
   // setTodoName("")
 }
@@ -33,12 +34,12 @@ const handleAddButtonClicked=()=>{
       <div className="container text-center">
         <div className="row kg-row">
           <div className="col-6">
-            {/* <input type="text" ref={todoNameElement} placeholder="Enter Todo Here"  onChange={handleNameChange} value={todoName} />
+            {/* <input type="text"  placeholder="Enter Todo Here"  onChange={handleNameChange} value={todoName} />
           </div> */}
            <input type="text" ref={todoNameElement} placeholder="Enter Todo Here"   />
           </div>
           {/* <div className="col-4">
-            <input type="date" ref={dueDateElement} onChange={handDateChange} value={dueDate}/>
+            <input type="date"  onChange={handDateChange} value={dueDate}/>
           </div> */}
           <div className="col-4">
             <input type="date" ref={dueDateElement}  />
@@ -54,3 +55,6 @@ const handleAddButtonClicked=()=>{
   }
   
   export default AddTodo;
+
+//   useState is for changing data that should make the component re-render.
+// useRef is for storing values or working with the DOM without re-rendering the component.
