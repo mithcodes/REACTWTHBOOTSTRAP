@@ -6,7 +6,7 @@ import { MdOutlineLibraryAdd } from "react-icons/md";
 function AddTodo({onNewItem}) {
   //  const [todoName,setTodoName]=useState("");
   // const [dueDate,setDueDate]=useState("")
-// useref sa bahut sara code nai likhna padega orhr input ka baad page render nai karega 
+// useref sa bahut sara code nai likhna padega or hr input ka baad page render nai karega 
  const todoNameElement=useRef()
  const dueDateElement=useRef()
 //   const handleNameChange=(event)=>{
@@ -58,3 +58,6 @@ const handleAddButtonClicked=()=>{
 
 //   useState is for changing data that should make the component re-render.
 // useRef is for storing values or working with the DOM without re-rendering the component.
+
+
+// useState re-render trigger karta hai jab state change hoti hai, jabki useRef change hone par re-render nahi karta, aur mutable values ya DOM elements ko directly handle karta hai.

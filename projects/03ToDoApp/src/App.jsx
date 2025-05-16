@@ -12,14 +12,17 @@ function App() {
 
   const onNewItem = (itemName, itemduedate) => {
     console.log(`new item ${itemName}  ${itemduedate}`);
-    const newToDoItem = [...todoItems, {  name: itemName, date: itemduedate }];
+    const newToDoItem = [...todoItems, { id:Date.now(), name: itemName, date: itemduedate }];
+    //aha hmlog object ko destructre kar rahah haan 
     setTodoItems(newToDoItem);
   };
 
 
   const onDeleteItem = (todoItemName) => {
-    const newTodoItems = todoItems.filter((item) => item.name !== todoItemName);
+    const newTodoItems = todoItems.filter((item) => item.id !== todoItemName);
     setTodoItems(newTodoItems);
+
+    //task do ya kch bhi do pr wo destruct upar wala k form mai hona chahia
   };
 
   // 
@@ -42,3 +45,17 @@ function App() {
 }
 
 export default App;
+
+
+
+// Good question! key={item.id} React ke internal rendering process ke liye hota hai, jabki id={item.id} tumhare application logic ke liye hota hai. Dono ka use alag-alag purposes ke liye hota hai. Chalo, dono ko detail se samjhte hain:
+
+// key={item.id}
+// Purpose: key prop React ke liye hota hai, jo list ke elements ko efficiently identify aur manage karta hai. Ye key prop React ko help karta hai ki wo jaan sake ki list ke elements mein kya changes aaye hain (add, remove, update).
+
+// Usage: key ko React ki internal workings ke liye use kiya jata hai. Tum ise directly delete ya update karne ke liye nahi use kar sakte, kyunki ye React ke internal rendering process se connected hota hai.
+
+// id={item.id}
+// Purpose: id prop tumhare application ke logic ke liye hota hai. Ye tumhare component ko unique identifier provide karta hai, jo tum specific actions perform karne ke liye use kar sakte ho.
+
+// Usage: Tum id ko use kar ke specific item ko delete kar sakte ho. Jab tum id ko onDelete function ke through pass karte ho, to tum precisely identify kar sakte ho ki kaunsa item delete karna hai.

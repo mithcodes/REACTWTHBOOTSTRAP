@@ -9,17 +9,13 @@ import FoodInput from "./components/FoodInput";
 
 
 function App() {
-  // let foodItems = ["Sabzi", "Green Vegetable", "Roti", "Salad", "Milk", "Ghee"];
-  // let textToshow="food item enter by user";
-  // let [text,setText]=useState("enter your item")
-  // const handleInput=(event)=>{
-  //   setText(event.target.value);
-  // }
+  
 
   const [foodItems,setFoodItems]=useState(["Sabzi", "Green Vegetable", "Roti", "Salad"]);
 
   const onKeyDown=(event)=>{
-  if(event.key==='Enter'){
+   if(event.key==='Enter'){
+    
   let newFoodItem = event.target.value;
   event.target.value='';
 console.log("food value is enter"+newFoodItem)
@@ -30,12 +26,16 @@ setFoodItems(newItems);
     } 
   
   }
+    
+  // if (foodItems.length===0){
+  //   return <h3>i am still hungry</h3>
+  // }
+
   return (
     <>
    <Container >
      <h1 className="food-heading">Healthy Food</h1>
-      {/* <FoodInput onhadleInput={handleInput}></FoodInput>
-      <p>{text}</p> */}
+       {foodItems.length===0 ? <h3>i am hungry</h3>: null}
       <FoodInput handleKeyDown={onKeyDown}></FoodInput>
       <FoodItems items={foodItems}></FoodItems>
    </Container>

@@ -6,7 +6,8 @@ import WelcomeMessage from './WelcomeMessage';
 import LoadingSpinner from './LoadingSpinner';
 
 const PostList = () => {
-  const 
+  const { postList, fetching } = useContext(PostListData);
+
  
   return (
     <center>

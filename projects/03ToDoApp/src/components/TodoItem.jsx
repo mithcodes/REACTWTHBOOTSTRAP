@@ -1,6 +1,6 @@
 import React from "react"
 import { MdDelete } from "react-icons/md";
-const TodoItem=({todoName,todoDate,onDelete})=>{
+const TodoItem=({todoName, todoId,todoDate,onDelete})=>{
     return(
         <div className="container ">
         <div className="row kg-row">
@@ -8,7 +8,7 @@ const TodoItem=({todoName,todoDate,onDelete})=>{
           <div className="col-4">{todoDate}</div>
           <div className="col-2">
             {/* <button type="button" class="btn btn-danger kg-button" onClick={()=>onDelete(todoName)}> */}
-            <button type="button" class="btn btn-danger kg-button" onClick={()=>onDelete(todoName)}>
+            <button type="button" class="btn btn-danger kg-button" onClick={()=>onDelete(todoId)}>
             <MdDelete />
             </button>
           </div>

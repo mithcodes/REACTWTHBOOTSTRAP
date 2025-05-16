@@ -22,7 +22,7 @@ function App() {
     <div className="main-container">
       <h1>Seller</h1>
       <Input addProduct={productList}></Input>
-      <ProductList product={entry} onDelete={deleteProduct}></ProductList>
+      <ProductList product={entry} class={deleteProduct}></ProductList>
     </div>
   );
 }

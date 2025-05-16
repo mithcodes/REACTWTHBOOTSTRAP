@@ -27,7 +27,7 @@ const CandyAdd = ({ onNewCandy, updateCart }) => {
     return (
         <div className="container">
             <div className="row m-3">
-                <div className="col-12 col-md-4 mb-3">
+                <div className="col mb-3">
                     <input 
                         type="text" 
                         className="form-control" 
@@ -36,7 +36,7 @@ const CandyAdd = ({ onNewCandy, updateCart }) => {
                         onChange={handleName}
                     />
                 </div>
-                <div className="col-6 col-md-3 mb-3">
+                <div className="col mb-3">
                     <input 
                         type="number" 
                         className="form-control" 
@@ -45,7 +45,7 @@ const CandyAdd = ({ onNewCandy, updateCart }) => {
                         onChange={handlePrice}
                     />
                 </div>
-                <div className="col-6 col-md-4 mb-3">
+                <div className="col mb-3">
                     <textarea 
                         type="text" 
                         className="form-control" 
@@ -55,7 +55,7 @@ const CandyAdd = ({ onNewCandy, updateCart }) => {
                         onChange={handleDetail}
                     ></textarea>
                 </div>
-                <div className="col-12 col-md-1 mb-3">
+                <div className="col mb-3">
                     <button 
                         type="button" 
                         className="btn btn-success btn-block" 

@@ -1,18 +1,5 @@
-// Importing necessary components and styles
-import AppName from './components/AppName';
-import AddTodo from './components/AddTodo';
-import TodoItems from './components/TodoItem';
 
-import './App.css';
 
-// Importing necessary hooks and context
-import { useReducer} from 'react';
-import { TodoItemsContext } from './components/store/todo-items-store';
-
-import AppName from './components/AppName'; - This line imports the AppName component from the ./components/AppName.js file.
-import AddTodo from './components/AddTodo'; - This line imports the AddTodo component from the ./components/AddTodo.js file.
-import TodoItems from './components/TodoItem'; - This line imports the TodoItems component from the ./components/TodoItem.js file.
-import './App.css'; - This line imports the App.css file, which contains styles for the App component.
 import { useReducer} from 'react'; - This line imports the useReducer hook from the react library. The useReducer hook is used to manage state in functional components.
 import { TodoItemsContext } from './components/store/todo-items-store'; - This line imports the TodoItemsContext context from the ./components/store/todo-items-store.js file. The TodoItemsContext context is used to provide state and event handlers to child components.
 

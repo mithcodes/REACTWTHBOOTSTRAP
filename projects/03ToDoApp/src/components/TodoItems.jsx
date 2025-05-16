@@ -6,7 +6,12 @@ import styles from './TodoItems.module.css';
             return (
                 <div className={styles.itemscontainer}>
                     {todoItems.map((item) => (
-                        <TodoItem todoDate={item.date} todoName={item.name} key={item.id} onDelete={ onDeleteClick} />
+                        <TodoItem 
+                        todoDate={item.date} 
+                        todoName={item.name}
+                         key={item.id} 
+                         todoId={item.id}
+                        onDelete={ onDeleteClick} />
                     ))}
                 </div>
             );
